@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 3</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.2em;
+        }
+        a{
+            color: black;
+        }
+        a:visited{
+            color: rgb(190, 23, 23);
+        }
+        a:hover{
+            color: rgb(255, 0, 0);
+        }
+        a:active{
+            color: lime;
+            text-decoration: underline;
+        }
+        .paginas{
+            margin-right: 20px;
+            font-size: 1.8rem;
+        }
+        .paginas:visited{
+            color: darkblue;
+        }
+        .paginas:hover{
+            color: rgb(104, 208, 243)
+        }
+        .paginas:active{
+            color: rgb(255, 176, 30);
+        }
+        #voltar::before{
+            content: '←';
+        }
+        #casa::after{
+            content: '⌂';
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+        <li><a href="https://www.google.com.br" target="_blank">Google</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+    </ul>
+    <a id="voltar" class="paginas" href="pg02.html"> Anterior </a>
+    <a id="casa"  class="paginas" href="index.html"> Home</a>
+</body>
+</html>

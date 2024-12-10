@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>As imagens mudarão confome o tamnho da janela.</h1>
+    <hr>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/paisagem-300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/paisagem-700.jpg" type="image/jpg">
+        <img src="imagens/paisagem-1000.jpg" alt="Imagem Dinâmica">
+    </picture>
+    <hr>
+    <h1>Reproduuzindo Áudios</h1>
+    <hr>
+    <audio preload="metadata" controls loop>
+        <source src="midia/videoplayback.mp3" type="audio/mpeg">
+        <source src="midia/videoplayback.ogg" type="audio/ogg">
+        <source src="midia/videoplayback.wav" type="audio/wav">
+        <p>Infelizmene seu navegador é uma bosta e não roda áudio. <a href="midia/videoplayback.mp3"></a>Clique aqui para baixar.</p>
+    </audio>
+</body>
+</html>
